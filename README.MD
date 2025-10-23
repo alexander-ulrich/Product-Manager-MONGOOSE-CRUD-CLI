@@ -1,4 +1,4 @@
-# 🛍️ Simple eCommerce CRUD CLI
+# 🛍️ Simple Product Manager eCommerce CRUD CLI
 
 A simple **Command-Line Interface (CLI)** eCommerce product manager built with **Node.js** using **TypeScript**, **commander** and **Mongoose (MongoDB)**.
 
@@ -27,8 +27,8 @@ Each product has:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/alexander-ulrich/eCommerce-CRUD-CLI.git
-cd eCommerce-CRUD-CLI
+git clone https://github.com/alexander-ulrich/Product-Manager-MONGOOSE-CRUD-CLI.git
+cd Product-Manager-MONGOOSE-CRUD-CLI
 ```
 
 ### 2. Install dependencies
