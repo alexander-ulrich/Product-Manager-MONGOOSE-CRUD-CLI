@@ -1,0 +1,39 @@
+{
+  "name": "mongoose-crudcli",
+  "version": "1.0.0",
+  "main": "app.ts",
+  "type": "module",
+  "imports": {
+    "#db": {
+      "development": "./src/db/index.ts",
+      "default": "./dist/db/index.js"
+    },
+    "#models": {
+      "development": "./src/models/index.ts",
+      "default": "./dist/models/index.js"
+    },
+    "#types": {
+      "development": "./src/types/index.ts",
+      "default": "./dist/types/index.js"
+    }
+  },
+  "scripts": {
+    "dev": "node --conditions development --env-file=.env.development src/app.ts",
+    "prebuild": "rm -rf dist",
+    "build": "tsc",
+    "prestart": "npm run build",
+    "start": "node --env-file=.env.production dist/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^24.8.1",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "commander": "^14.0.1",
+    "mongoose": "^8.19.2"
+  }
+}
